@@ -23,8 +23,8 @@ func main() {
 		panic(err)
 	}
 
-	from := time.Now().AddDate(0, -6, 0)
-	to := time.Now().AddDate(0, 6, 0)
+	from := time.Now().AddDate(0, -18, 0)
+	to := time.Now().AddDate(0, 18, 0)
 	txs := fin.GetTransactions(from, to)
 
 	ledger := transact.LedgerFromTransactions(txs)
