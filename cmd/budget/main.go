@@ -47,7 +47,7 @@ func main() {
 		if k == "" || k == pda.Name {
 			continue
 		}
-		fmt.Printf("\t => %v  %v\n", k, math.Round(v*100.0)/100.0)
+		fmt.Printf("\t %v => %v  %v\n", pda.Name, k, math.Round(v*100.0)/100.0)
 	}
 }
 
